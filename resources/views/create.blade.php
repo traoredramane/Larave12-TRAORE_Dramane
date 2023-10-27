@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
 <h1>Déposer une annonce</h1>
 <hr>
 
@@ -40,4 +41,5 @@
 
 
 </form>
-@endsection
+</div>
+@endsection 

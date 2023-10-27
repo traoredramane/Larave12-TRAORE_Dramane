@@ -26,4 +26,12 @@ class AdController extends Controller
         
         return redirect()->route('welcome')->with('success', 'Votre annonce a été postée.!');
     }
+    
+    public function welcome()
+    {
+        $ad = Ad::all();
+        return view('welcome', compact('ad'));
+    }
+     
+    
 }
